@@ -9,27 +9,26 @@
     <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/iconsmind/outline/512/Envelope-icon.png">
 
     <meta property="og:image" content="https://www.boston-discovery-guide.com/image-files/800-fireworks-over-harbor-matthew-landers-unsplash-3x2.jpg">
-    <meta property="og:title" content="James' Card">
-    <meta property="og:description" content="Happy New Year">
+    <meta property="og:title" content="정의여자중학교에서 마음을 담은 카드가 도착했습니다.">
+    <meta property="og:description" content="카드 자세히 보기">
 
     <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Poor+Story&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
     <style>
         * {
-            font-family: 'Nanum Gothic Coding', monospace;
-            font-family: 'Poor Story', cursive;
+            font-family: 'Noto Sans KR', sans-serif;
         }
         body {
-            background-color: #9b070f;
+            background-color: white;
 
 
         }
 
         .envelope {
-            
+
 
             width: 200px;
             height: 200px;
@@ -45,7 +44,7 @@
         }
 
         .envelope-msg {
-            color: white;
+            color: black;
             text-align: center;
         }
         .letter-close {
@@ -60,7 +59,7 @@
             width: 200px;
             height: 200px;
 
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Seal_of_the_Republic_of_Korea_Marine_Corps.svg');
+            background-image: url('./card.jpeg');
             background-size: cover;
             background-position: center;
 
@@ -71,11 +70,13 @@
             border: 5px solid white;
             box-shadow: 0px 0px 10px 0px whitesmoke;
 
-            
+
 
         }
         h1 {
-            color: white;
+            font-family: 'Great Vibes', cursive;
+
+            color: #1D1370;
             text-align: center;
 
             margin-top: 30px;
@@ -83,29 +84,35 @@
 
         }
         .msgbox {
-            background-color: ivory;
+            background-color: #1D1370;
 
             width: 500px;
+            height: 500px;
             margin: auto;
 
-            color: brown;
+            color: white;
 
             padding: 30px;
 
             font-size: 20px;
             line-height: 30px;
 
+            text-align: center;
+
             box-shadow: 0px 0px 10px 0px whitesmoke;
         }
         .from {
-            text-align: right;
+            text-align: center;
             margin-bottom: 0px;
         }
 
         @media screen and (max-width: 760px) {
             .msgbox {
                 width: 300px;
+                height: 300px;
+
                 padding: 20px;
+                font-size: 16px;
             }
             .rtan {
                 width: 150px;
@@ -130,30 +137,32 @@
             document.getElementsByClassName("letter-open")[0].style.display = 'block'
         }
 
-        
+
     </script>
 </head>
 
 <body>
     <div class="letter-close">
         <div class="envelope" onclick="open_letter()"></div>
-        <h2 class="envelope-msg">You've Got Mail!</h2>
+        <h2 class="envelope-msg">카드가 도착했습니다.</h2>
     </div>
     <div class="letter-open">
         <div class="rtan" onclick="go_rtan()"></div>
-        <h1>Goodbye 2020!</h1>
+        <h1>Happy New Year</h1>
         <div class="msgbox">
-            Dear all, <br />
-            2020 has been a rough <br />
-            year for everyone.  <br />
-            I wish you best of luck in 2021 <br />
-            Happy New Year! <br />
-            코로나 때문에 힘들었던 2020년은 잊고 <br />
-            모두 행복한 2021년 되세요! <br />
-            <p class="from">2020.12.31 Taeho</p>
+
+            <br />
+            <br />
+            코로나 펜데믹으로 다사다난했던 2020년, <br />
+            2021년에는 건강과 행복을 빕니다. <br />
+            희망찬 신축년 새해에는  <br />
+            행운과 평안이 가득하기를 기원합니다. <br />
+            <br />
+
+            <p class="from">정의여자중학교</p>
         </div>
     </div>
-    
+
 
 
 </body>
